@@ -30,64 +30,106 @@
       color: var(--texto);
     }
 
+    /* NAVBAR */
     .navbar {
       background-color: var(--rojo) !important;
+      padding: 0.6rem 1rem;
     }
 
     .navbar-brand {
       color: var(--blanco) !important;
       font-weight: 600;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    h2 {
+    .navbar-brand img {
+      width: 24px;
+    }
+
+    /* TITULOS */
+    h1 {
       text-align: center;
       color: var(--rojo-oscuro);
-      margin-top: 50px;
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+
+    h4, h5 {
+      color: var(--rojo-oscuro);
       font-weight: 600;
     }
 
     p {
       text-align: center;
+      margin-bottom: 0.3rem;
     }
 
-    .carousel-caption {
-      background-color: rgba(198,40,40,0.85);
-      border-radius: 10px;
-      padding: 10px;
-    }
-
+    /* CARDS */
     .card {
-      border-radius: 12px;
+      border-radius: 16px;
       box-shadow: 0 4px 10px rgba(0,0,0,.15);
-      transition: transform .3s;
+      margin-bottom: 1rem;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card-title {
-      color: var(--rojo-oscuro);
-      font-weight: 600;
-    }
-
+    /* BOTONES */
     .btn-custom {
       background-color: var(--naranja);
       color: var(--blanco);
       font-weight: bold;
       border: none;
+      padding: 14px;
+      font-size: 1.05rem;
+      border-radius: 14px;
     }
 
     .btn-custom:hover {
       background-color: var(--rojo-oscuro);
     }
 
+    .btn-success {
+      padding: 14px;
+      font-size: 1.05rem;
+      border-radius: 14px;
+    }
+
+    /* MAPA */
+    .card img {
+      max-height: 300px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    /* FOOTER */
     footer {
       background-color: var(--rojo-oscuro);
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 60px;
+      padding: 16px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    /* ===== TABLET Y PC ===== */
+    @media (min-width: 768px) {
+
+      h1 {
+        font-size: 2.3rem;
+      }
+
+      .navbar-brand {
+        font-size: 1.25rem;
+      }
+
+      .navbar-brand img {
+        width: 30px;
+      }
+
+      .card img {
+        max-height: none;
+      }
     }
   </style>
 </head>
@@ -98,40 +140,47 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="logo1.png" width="30"> Larry´s Pizzas
+      <img src="logo1.png" alt="Logo"> Larry´s Pizzas
     </a>
   </div>
 </nav>
 
 <!-- CONTENIDO -->
-<div class="container my-5">
-  <h1 class="text-center mb-4" style="color: var(--rojo-oscuro); font-weight:600;">
-    Ordenar por
-  </h1>
+<div class="container my-4">
+  <h1 class="mb-4">Ordenar por</h1>
 
-  <div class="row g-4 align-items-start">
+  <!-- ORDEN MOBILE FIRST -->
+  <div class="row g-4 align-items-start flex-column-reverse flex-md-row">
 
     <!-- COLUMNA IZQUIERDA -->
     <div class="col-md-5">
       <div class="card p-4">
-        <h4 class="mb-3">Llamada</h4>
-        <a href="tel:5553895104" class="btn btn-custom w-100 mb-2">55 5389 5104</a>
-        <a href="tel:5551474787" class="btn btn-custom w-100 mb-3">55 5147 4787</a>
+        <h4 class="mb-3 text-center">Llamada</h4>
 
-        <h4 class="mb-3">WhatsApp</h4>
+        <a href="tel:5553895104" class="btn btn-custom w-100 mb-3">
+          55 5389 5104
+        </a>
+
+        <a href="tel:5551474787" class="btn btn-custom w-100 mb-4">
+          55 5147 4787
+        </a>
+
+        <h4 class="mb-3 text-center">WhatsApp</h4>
+
         <a href="https://wa.me/525550706409" target="_blank"
            class="btn btn-success w-100 fw-bold">
           +52 55 5070 6409
         </a>
       </div>
 
-      <div class="card mt-4 p-3">
-        <h5 class="mb-2"> Dirección</h5>
-        <p class="mb-1">
-          Avenida Felipe Ángeles, Esquina Aquiles Serdán<br>
+      <div class="card p-3">
+        <h5 class="mb-2 text-center">Dirección</h5>
+        <p>
+          Avenida Felipe Ángeles<br>
+          Esquina Aquiles Serdán<br>
           Colonia San Lucas Patoni
         </p>
-        <small class="text-muted">
+        <small class="text-muted d-block text-center mt-2">
           Aceptamos vales de despensa y gasolina.<br>
           El repartidor no lleva más de $50 en cambio.
         </small>
@@ -141,8 +190,7 @@
     <!-- COLUMNA DERECHA -->
     <div class="col-md-7">
       <div class="card p-3">
-        <img src="Mapa.png" alt="Mapa ubicación"
-             class="img-fluid rounded shadow-sm">
+        <img src="Mapa.png" alt="Mapa ubicación" class="rounded">
       </div>
     </div>
 
@@ -152,5 +200,6 @@
 <footer>
   <p>© Larry’s Pizzas</p>
 </footer>
-  </body>
+
+</body>
 </html>
