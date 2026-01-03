@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Larry´s Pizzas</title>
+  <link rel="icon" href="logo1.png" type="image/png">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --rojo: #c62828;
+      --rojo-oscuro: #8e0000;
+      --naranja: #ef6c00;
+      --amarillo: #fbc02d;
+      --fondo: #fff3e0;
+      --texto: #333;
+      --blanco: #fff;
+    }
+
+    body {
+      background-color: var(--fondo);
+      font-family: 'Poppins', sans-serif;
+      color: var(--texto);
+    }
+
+    .navbar {
+      background-color: var(--rojo) !important;
+    }
+
+    .navbar-brand {
+      color: var(--blanco) !important;
+      font-weight: 600;
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--rojo-oscuro);
+      margin-top: 50px;
+      font-weight: 600;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .carousel-caption {
+      background-color: rgba(198,40,40,0.85);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .card {
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,.15);
+      transition: transform .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-title {
+      color: var(--rojo-oscuro);
+      font-weight: 600;
+    }
+
+    .btn-custom {
+      background-color: var(--naranja);
+      color: var(--blanco);
+      font-weight: bold;
+      border: none;
+    }
+
+    .btn-custom:hover {
+      background-color: var(--rojo-oscuro);
+    }
+
+    footer {
+      background-color: var(--rojo-oscuro);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="logo1.png" width="30"> Larry´s Pizzas
+    </a>
+  </div>
+</nav>
+
+<!-- CARRUSEL (SIN CAMBIOS) -->
+<div id="carouselPaquetes" class="carousel slide" data-bs-ride="carousel"> <div class="carousel-inner"> <!-- Paquete 1 --> <div class="carousel-item active"> <img src="1.png" class="d-block w-100 rounded" alt="Paquete 1"> <div class="carousel-caption"> <h5>Paquete Familiar</h5> <p>3 pizzas familiares + refresco</p> </div> </div> <!-- Paquete 2 --> <div class="carousel-item"> <img src="3.png" class="d-block w-100 rounded" alt="Paquete 2"> <div class="carousel-caption"> <h5>Paquete grande</h5> <p>3 pizzas grandes + refresco</p> </div> </div> <!-- Paquete 3 --> <div class="carousel-item"> <img src="5.png" class="d-block w-100 rounded" alt="Paquete 3"> <div class="carousel-caption"> <h5>Paquete Pareja</h5> <p>1 pizza + alitas picositas + refresco</p> </div> </div> <!-- Paquete 4 --> <div class="carousel-item"> <img src="2.png" class="d-block w-100 rounded" alt="Paquete 4"> <div class="carousel-caption"> <h5>Paquete mediano</h5> <p>3 pizzas medianas + refrescos</p> </div> </div> <!-- Paquete 5 --> <div class="carousel-item"> <img src="4.png" class="d-block w-100 rounded" alt="Paquete 5"> <div class="carousel-caption"> <h5>Paquete mega</h5> <p>1 mega pizza</p> </div> </div> <!-- Paquete 6 --> <div class="carousel-item"> <img src="6.png" class="d-block w-100 rounded" alt="Paquete 6"> <div class="carousel-caption"> <h5>Pizza Familiar</h5> <p>1 pizza familiar</p> </div> </div> </div> <button class="carousel-control-prev" type="button" data-bs-target="#carouselPaquetes" data-bs-slide="prev"> <span class="carousel-control-prev-icon"></span> </button> <button class="carousel-control-next" type="button" data-bs-target="#carouselPaquetes" data-bs-slide="next"> <span class="carousel-control-next-icon"></span> </button> </div> </div>
+<!-- PIZZAS CLÁSICAS -->
+<h2>Pizzas Clásicas</h2>
+<p>Especialidades tradicionales 2X1</p>
+<p>
+  Chica: $220 · Mediana: $270 · Grande: $310 · Familiar: $350
+</p>
+
+<div class="container">
+  <div class="row g-4">
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Larry’s</h5>
+      <p>Jamón, salami, champiñón, cebolla, chorizo, jalapeño</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Suprema</h5>
+      <p>Carne molida, cebolla, p. verde y pepperoni</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Pastor</h5>
+      <p>Carne al pastor, cebolla y piña</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Clasica</h5>
+      <p>Champiñones, p. verde y pepperoni</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Campechana</h5>
+      <p>Jamón, piña, chorizo y rajas</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Mexicana</h5>
+      <p>Pierna, pollo, jalapeño y aguacate</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Cherry</h5>
+      <p>Jamón, piña y cereza</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Combinada</h5>
+      <p>Jamón, salami, cebolla, champiñones, p. verde y chorizo</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">De lujo</h5>
+      <p>Pepperoni, salami, tocino y salchicha</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Especial</h5>
+      <p>Pollo, atún, champiñón, rajas y aguacate</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Vegetariana</h5>
+      <p>Cebolla, champiñones, aceituna, p. verde y aguacate</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Ranchera</h5>
+      <p>Frijoles, chorizo, jalapeño y aguacate</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Veneciana</h5>
+      <p>Jamón y salchicha</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Carnes frías</h5>
+      <p>Pierna, salami, salchicha y pepperoni</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Cubana</h5>
+      <p>Atún, cebolla, jitomate, pierna y aguacate</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Mágica</h5>
+      <p>Champiñón, piña y pepperoni</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Carnívora</h5>
+      <p>Carne al pastor, pollo, carne molida, tocino y salchicha</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Campestre</h5>
+      <p>Elote, pollo y champiñón</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Hawaiana</h5>
+      <p>Jamón y piña</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-3"><div class="card"><div class="card-body text-center">
+      <h5 class="card-title">Americana</h5>
+      <p>Pepperoni, champiñones y rajas</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+  </div>
+</div>
+
+<h2>Especialidades Premium 2X1</h2>
+<p>Chica: $240 · Mediana: $300 · Grande: $340 · Familiar: $380</p>
+
+<div class="container">
+  <div class="row g-4 justify-content-center">
+
+    <div class="col-md-4"><div class="card border-warning"><div class="card-body text-center">
+      <h5 class="card-title">Alambre</h5>
+      <p>Cebolla, p. verde, tocino y bisteck</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-4"><div class="card border-warning"><div class="card-body text-center">
+      <h5 class="card-title">Marinera</h5>
+      <p>Atún, cebolla, aceituna, camarón y aguacate</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+    <div class="col-md-4"><div class="card border-warning"><div class="card-body text-center">
+      <h5 class="card-title">Tropical</h5>
+      <p>Camarón y piña</p>
+      <a href="Larrys-pedido.html" class="btn btn-custom">Ordena</a>
+    </div></div></div>
+
+  </div>
+</div>
+
+
+<!-- LISTA ESPECIAL -->
+<h2>Especialidades y Extras</h2>
+
+<div class="container mb-5">
+  <ul class="list-group shadow">
+    <li class="list-group-item"> Alambre de res: $140</li>
+    <li class="list-group-item"> Alambre de pollo: $140</li>
+    <li class="list-group-item"> Alitas picositas: $115</li>
+    <li class="list-group-item"> Spaghetti blanco: $70</li>
+    <li class="list-group-item"> Spaghetti rojo: $90</li>
+    <li class="list-group-item"> Spaghetti boloñesa: $120</li>
+    <li class="list-group-item"> Burritos(Bisteck, chorizo o campechanos): $85</li>
+    <li class="list-group-item"> Parrillada guerrillera: 260</li>
+  </ul>
+</div>
+
+<footer>
+  <p>© Larry’s Pizzas</p>
+</footer>
+
+</body>
+</html>

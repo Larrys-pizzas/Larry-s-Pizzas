@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Larry´s Pizzas</title>
+  <link rel="icon" href="logo1.png" type="image/png">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --rojo: #c62828;
+      --rojo-oscuro: #8e0000;
+      --naranja: #ef6c00;
+      --amarillo: #fbc02d;
+      --fondo: #fff3e0;
+      --texto: #333;
+      --blanco: #fff;
+    }
+
+    body {
+      background-color: var(--fondo);
+      font-family: 'Poppins', sans-serif;
+      color: var(--texto);
+    }
+
+    .navbar {
+      background-color: var(--rojo) !important;
+    }
+
+    .navbar-brand {
+      color: var(--blanco) !important;
+      font-weight: 600;
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--rojo-oscuro);
+      margin-top: 50px;
+      font-weight: 600;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .carousel-caption {
+      background-color: rgba(198,40,40,0.85);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .card {
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,.15);
+      transition: transform .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-title {
+      color: var(--rojo-oscuro);
+      font-weight: 600;
+    }
+
+    .btn-custom {
+      background-color: var(--naranja);
+      color: var(--blanco);
+      font-weight: bold;
+      border: none;
+    }
+
+    .btn-custom:hover {
+      background-color: var(--rojo-oscuro);
+    }
+
+    footer {
+      background-color: var(--rojo-oscuro);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="logo1.png" width="30"> Larry´s Pizzas
+    </a>
+  </div>
+</nav>
+
+<!-- CONTENIDO -->
+<div class="container my-5">
+  <h1 class="text-center mb-4" style="color: var(--rojo-oscuro); font-weight:600;">
+    Ordenar por
+  </h1>
+
+  <div class="row g-4 align-items-start">
+
+    <!-- COLUMNA IZQUIERDA -->
+    <div class="col-md-5">
+      <div class="card p-4">
+        <h4 class="mb-3">Llamada</h4>
+        <a href="tel:5553895104" class="btn btn-custom w-100 mb-2">55 5389 5104</a>
+        <a href="tel:5551474787" class="btn btn-custom w-100 mb-3">55 5147 4787</a>
+
+        <h4 class="mb-3">WhatsApp</h4>
+        <a href="https://wa.me/525550706409" target="_blank"
+           class="btn btn-success w-100 fw-bold">
+          +52 55 5070 6409
+        </a>
+      </div>
+
+      <div class="card mt-4 p-3">
+        <h5 class="mb-2"> Dirección</h5>
+        <p class="mb-1">
+          Avenida Felipe Ángeles, Esquina Aquiles Serdán<br>
+          Colonia San Lucas Patoni
+        </p>
+        <small class="text-muted">
+          Aceptamos vales de despensa y gasolina.<br>
+          El repartidor no lleva más de $50 en cambio.
+        </small>
+      </div>
+    </div>
+
+    <!-- COLUMNA DERECHA -->
+    <div class="col-md-7">
+      <div class="card p-3">
+        <img src="Mapa.png" alt="Mapa ubicación"
+             class="img-fluid rounded shadow-sm">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>© Larry’s Pizzas</p>
+</footer>
+  </body>
+</html>
